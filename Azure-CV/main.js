@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   getVisitCount();
 });
 
-const functionApi = AZURE_FUNCTION_KEY;
+const functionApi = process.env.AZURE_FUNCTION_KEY;
 
 const getVisitCount = () => {
   fetch(functionApi)
